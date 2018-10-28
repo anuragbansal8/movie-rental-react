@@ -20,21 +20,14 @@ class App extends Component {
           this.setState({
             data: data
           })
-
-          console.log(data)
       })
   }
 
   toggleButton = (i) => {
-    console.log('hey1')
-    
-   
        var count = this.state.reservedCount-1
     this.setState({reservedCount: count, index: false })
   }
-  toggleButton1 = (i) => {
-    console.log('hey2')
-    
+  toggleButton1 = (i) => {  
        var count = this.state.reservedCount+1
     this.setState({reservedCount: count, index: i })
   }
